@@ -1,0 +1,28 @@
+Ejercicio Lab 2 - Redes y volúmenes en Docker
+
+Primero instalé Docker en la máquina virtual con los paquetes de Ubuntu y
+añadí mi usuario al grupo docker para no tener que usar sudo:
+   sudo apt install -y docker.io docker-compose
+   sudo adduser $USER docker
+
+Después abrí una terminal en un contenedor Ubuntu, probé las redes host, none y bridge con busybox, usé
+volúmenes y bind mounts con nginx, y monté Portainer para gestionar Docker
+desde el navegador.
+
+Para el servicio web busqué en Docker Hub la imagen oficial de Apache (httpd)
+y lancé un contenedor accesible en el puerto 8000:
+   docker run -d --name apache -p 8000:80 httpd
+   curl localhost:8000
+
+Respondía con "It works!", así que entré en el contenedor para buscar dónde
+estaba la página inicial. Mirando la configuración vi que está en
+/usr/local/apache2/htdocs/index.html:
+   docker exec -it apache bash
+   grep DocumentRoot conf/httpd.conf
+
+Cambié el mensaje de la página desde dentro del contenedor y salí:
+   echo "<html><body><h1>David Martínez - Lab2 Docker</h1></body></html>" > htdocs/index.html
+   exit
+
+Por último comprobé con curl que ya se mostraba el mensaje nuevo:
+   curl localhost:8000

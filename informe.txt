@@ -1,0 +1,907 @@
+CONTAINER ID   IMAGE                        COMMAND                  CREATED             STATUS                      PORTS                                     NAMES
+1b3c074c7503   httpd                        "httpd-foreground"       6 minutes ago       Up 6 minutes                0.0.0.0:8000->80/tcp, [::]:8000->80/tcp   apache
+be0f25c2aa07   nginx                        "/docker-entrypoint.…"   About an hour ago   Created                                                               web3
+2f885964c8db   nginx                        "/docker-entrypoint.…"   About an hour ago   Exited (0) 7 minutes ago                                              web
+64acc7bf0a69   busybox                      "sh"                     2 hours ago         Exited (137) 2 hours ago                                              test2
+3ccaa0586ec8   busybox                      "sh"                     2 hours ago         Exited (0) 2 hours ago                                                test1
+fd045ccfa773   busybox                      "sh"                     2 hours ago         Exited (0) 2 hours ago                                                none
+ef1d35dedd9d   busybox                      "sh"                     2 hours ago         Exited (0) 2 hours ago                                                hosttest
+f48b8d037bb1   ubuntu:24.04                 "/bin/bash"              2 hours ago         Exited (0) 2 hours ago                                                miubuntu01
+bd18d20b0a54   portainer/portainer-ce       "/portainer"             42 hours ago        Exited (2) 7 minutes ago                                              portainer
+2b0c923787eb   davidmb12/miprimerrepo:1.0   "python app.py"          42 hours ago        Exited (137) 42 hours ago                                             webapp1
+567721f81dd0   miappweb                     "python app.py"          42 hours ago        Exited (137) 42 hours ago                                             bold_moore
+7f683e9a8d58   hello-world                  "/hello"                 7 days ago          Exited (0) 7 days ago                                                 objective_darwin
+    1  sudo nano /etc/default/keyboard
+    2  rebot
+    3  reebot
+    4  reboot
+    5  mkdir lista_compra
+    6  cd lista_compra
+    7  cd..
+    8  cd
+    9  mkdir lista-compra
+   10  cd lista-compra
+   11  git init
+   12  sudo git init
+   13  git status
+   14  git config user.name "David Martinez Benjumea"
+   15  git config user.email "dmartbenj@gmail.com"
+   16  git config --list
+   17  nano supermercado.txt
+   18  git add supermercado.txt
+   19  git commit -m "Crear lista inicial del supermercado"
+   20  nano supermercado.txt
+   21  git commit -m "Añadir arroz y pasta a la compra"
+   22  git add supermercado.txt
+   23  git commit -m "Añadir arroz y pasta a la compra"
+   24  git log --oneline
+   25  git log
+   26  nano carniceria.txt
+   27  git add carniceria.txt
+   28  git commit -m "Crear lista de la carniceria"
+   29  nano carniceria.txt
+   30  git commit -m "Añadir hamburguesas a la carniceria"
+   31  git commit -am "Añadir hamburguesas a la carniceria"
+   32  nano pescaderia.txt
+   33  git add pescaderia.txt
+   34  git commit -m "Crear lista de la pescaderia"
+   35  nano pescaderia.txt
+   36  git commit -am "Añadir langostinos a la pescaderia"
+   37  git switch -c cena_viernes
+   38  nano_viernes.txt
+   39  nano cena_viernes.txt
+   40  git add cena_viernes.txt
+   41  git commit -m "Crear mençú inicial para cena del viernes"
+   42  nano cena_viernes.txt
+   43  git commit -am "Añadir patatas a la cena del viernes"
+   44  git switch main
+   45  git branch
+   46  git switch master
+   47  git commit -am "Actualizar productos del supermercado"
+   48  supermercado.txt
+   49  nano supermercado.txt
+   50  git commit -am "Actualizar productos del supermercado"
+   51  git switch cena_viernes
+   52  nano supermercado.txt
+   53  git switch master
+   54  nano supermercado.txt
+   55  git switch cena_viernes
+   56  git branches
+   57  git branch
+   58  git switch cena_viernes
+   59  git branch
+   60  git switch cena_viernes'
+   61  git switch cena_viernes
+   62  git commit -am "Actualizar productos del super"
+   63  git switch cena_viernes
+   64  nano supermercado.txt
+   65  git commit -am "Actulizar productos super"
+   66  git merge cena_viernes
+   67  git switch master
+   68  git merge cena_viernes
+   69  nano supermercado.txt
+   70  git add supermercado.txt
+   71  git commit -m "Resolver conflicto en supermercado"
+   72  git branch
+   73  nano pescaderia.txt
+   74  git add pescaderia.txt
+   75  nano supermercado.txt
+   76  git add supermercado.txt
+   77  git commit -am "Cambios en supermercado y pescaderia"
+   78  git branch
+   79  git switch cena_viernes
+   80  nano supermercado.txt
+   81  nano pescaderia.txt
+   82  git add pescaderia.txt
+   83  git status
+   84  git add supermercado.txt
+   85  git commit -am "cambios"
+   86  git branch
+   87  git switch master
+   88  git merge cena_viernes
+   89  nano supermercado.txt
+   90  git merge cena_viernes
+   91  git add .
+   92  git status
+   93  git commit -am "resolucion conflictos"
+   94  git status
+   95  git merge cena_viernes
+   96  nano supermercado.txt
+   97  git log --all --decorate --graph --oneline
+   98  git log --all --decorate --graph --oneline > informe.txt
+   99  git reflog >> informe.txt
+  100  git branch >> informe.txt
+  101  git status >> informe.txt
+  102  nano informe.txt
+  103  pgpi-g3-martinezbenjumea-david
+  104  git add .
+  105  git commit -am "Generar informe"
+  106  ls
+  107  ls lista-compra
+  108  nano informe.txt
+  109  ls
+  110  ls lista-compra
+  111  nano informe.txt
+  112  ls
+  113  ls lista-compra
+  114  nano carniceria.txt
+  115  ls lista-compra
+  116  cut informe.txt
+  117  cat informe.txt
+  118  ls lista-compra
+  119  cat informe.txt
+  120  ls lista-compra
+  121  cat informe.txt
+  122  ls
+  123  cd lista_compra
+  124  cd
+  125  cd lista-compra
+  126  cat informe.txt
+  127  ls
+  128  cd
+  129  cd 
+  130  cd ,..
+  131  cd ..
+  132  ls
+  133  mkdir debouncer_c
+  134  sudo mkdir debouncer_c
+  135  cd debouncer_c
+  136  mkdir include
+  137  sudo mkdir include
+  138  cd include
+  139  nano debouncer.h
+  140  ls
+  141  cd ..
+  142  ls
+  143  cd ..
+  144  ls
+  145  cd ..
+  146  ls
+  147  ld
+  148  ls
+  149  mkdir debouncer_c
+  150  cd debouncer_c
+  151  mkdir include
+  152  cd include
+  153  nano debouncer.h
+  154  cd ..
+  155  mkdir src
+  156  cd src
+  157  nano debouncer.c
+  158  sudo nano debouncer.c
+  159  cd ..
+  160  ls
+  161  cd include
+  162  ls
+  163  sudo nano debouncer.h
+  164  cd ..
+  165  ls
+  166  cd src
+  167  nano test_debouncer.c
+  168  sudo nano debouncer.h
+  169  ls
+  170  nano debouncer.c
+  171  cd ..
+  172  ls
+  173  nano Makefile
+  174  ls
+  175  git commit -m "feat(core): estructura inicial del debouncer en C y testbench"
+  176  git init
+  177  ls
+  178  nano .gitignore
+  179  git commit -m "feat(core): estructura inicial del debouncer en C y testbench"
+  180  cd ..
+  181  ls
+  182  nano crear_proyecto.sh
+  183  chmod +x crear_proyecto.sh
+  184  ./crear_proyecto.sh
+  185  cd pgpi-ejercicio2-debouncer
+  186  ls -la
+  187  find . -maxdepth 2 -type f
+  188  git init -b main
+  189  git status
+  190  git add .
+  191  git status
+  192  git commit -m "feat(core): estructura inicial del debouncer en C y testbench"
+  193  make
+  194  sudo apt install make
+  195  make
+  196  sudo apt update
+  197  sudo apt install build-
+  198  sudo apt update
+  199  sudo apt install build-essential
+  200  gcc --version
+  201  make
+  202  cd ..
+  203  ls
+  204  nano crear_proyecto.sh
+  205  ls
+  206  cd pgpi-ejercicio2-debouncer
+  207  ls
+  208  git log --oneline
+  209  git switch -c develop
+  210  git branch
+  211  git switch -c feature/active-low
+  212  git branch
+  213  cd include
+  214  sudo nano debouncer.h
+  215  git add include/debouncer.h
+  216  cd ..
+  217  git add include/debouncer.h
+  218  git commit -m "wip: cambios a medias"
+  219  nano src/debouncer.c
+  220  nano src/test_debouncer.c
+  221  ls
+  222  sudo nano test_debouncer.c
+  223  cd test_debouncer
+  224  ls
+  225  nano test_debouncer
+  226  nano test_debouncer.c
+  227  ls
+  228  nano tests/test_debouncer.c
+  229  git add .
+  230  git commit -m "fix provisional"
+  231  git log --oneline
+  232  make clean
+  233  make
+  234  nano src/debouncer.c
+  235  make clean
+  236  make
+  237  nano src/debouncer.c
+  238  make clean
+  239  make
+  240  git status
+  241  git add .
+  242  git commit -m "fix provisional"
+  243  git log --oneline -3
+  244  git switch develop
+  245  git switch -c feature/reset-function
+  246  git bran
+  247  git branch
+  248  ls
+  249  cd pgpi-ejercicio2-debouncer
+  250  ls
+  251  cd src
+  252  ls
+  253  nano debouncer.c
+  254  cd ..
+  255  ls
+  256  cd tests
+  257  ls
+  258  cd test_debouncer.c
+  259  nano test_debouncer.c
+  260  git config --global user.name "David Martinez Benjumea"
+  261  git config --global user.email "davmarben@alum.us.es"
+  262  git config --globar user.email "cwm9552@alum.us.es"
+  263  ubuntu
+  264  ssh-keygen -t ed25519 -C "davmarben@alum.us.es"
+  265  cat ~/.ssh/id_ed25519.pub
+  266  ssh -T gitea@gitea.lan
+  267  cat ~/.ssh/id_ed25519.pub
+  268  ssh -T gitea@gitea.lan
+  269  git clone gitea@gitea.lan:PGPI2627/BarbacoaL3.git
+  270  cd BarbacoaL3
+  271  git status
+  272  git branch -avv
+  273  git remote -v
+  274  git switch main
+  275  git checkout -b dev
+  276  git branch
+  277  ls
+  278  git switch main
+  279  git pull origin main
+  280  git pull main
+  281  git switch dev
+  282  ls
+  283  sudo nano asistentes.txt
+  284  git pull origin main
+  285  git pull
+  286  git pull origin main
+  287  sudo nano asistentes.txt
+  288  git pull origin main
+  289  sudo nano asistentes.txt
+  290  git branch
+  291  git switch dev
+  292  git pull origin main
+  293  sudo nano asistentes.txt
+  294  sudo nano comida.txt
+  295  sudo nano bebida.txt
+  296  sudo nano materiales.txt
+  297  sudo nano comida.txt
+  298  sudo nano materiales.txt
+  299  sudo nano bebida.txt
+  300  sudo nano juegos.txt
+  301  sudo nano bebida.txt
+  302  sudo nano comida.txt
+  303  git branch
+  304  git pull origin main
+  305  echo "=== LOG FINAL ===" > informe.txt
+  306  git log --all --decorate --graph --patch >> informe.txt
+  307  echo "=== REFLOG FINAL ===" >> informe.txt
+  308  git reflog >> informe.txt
+  309  echo "=== ESTADO FINAL ===" >> informe.txt
+  310  git status >> informe.txt
+  311  echo "=== RAMAS ===" >> informe.txt
+  312  git branch -avv >> informe.txt
+  313  echo "=== REMOTOS ===" >> informe.txt
+  314  git remote -v >> informe.txt
+  315  ls
+  316  nano informe.txt
+  317  cd ..
+  318  mv BarbacoaL3 pgpi-ejercicio3-g3-martinez-david
+  319  tar -czf pgpi-ejercicio3-g3-martinez-david.tar.gz pgpi-ejercicio3-g3-martinez-david
+  320  s
+  321  ls
+  322  cd pgpi-ejercicio2-g3-martinez-david
+  323  ls
+  324  cd ..
+  325  ls
+  326  mkdir entrega-github-ejercicio3
+  327  cp pgpi-ejercicio3-g3-martinez-david.tar.gz entrega-github/
+  328  cp pgpi-ejercicio3-g3-martinez-david.tar.gz entrega-ggithub-ejercicio3/
+  329  cp pgpi-ejercicio3-g3-martinez-david.tar.gz entrega-github-ejercicio3/
+  330  cd entrega-github-ejercicio3
+  331  git init
+  332  git branch -M main
+  333  git add pgpi-ejercicio3-g3-martinez-david.tar.gz
+  334  git commit -m "Entrega ej 3"
+  335  https://github.com/Dmartbenj/ejercicio3.git
+  336  git remote add origin https://github.com/Dmartbenj/ejercicio3.git
+  337  git push -u origin main
+  338  ls
+  339  cd BarbacoaL3
+  340  ls
+  341  git branch
+  342  sudo nano asistentes.txt
+  343  ls
+  344  sudo nano bebida.txt
+  345  sudo nano comida.txt
+  346  sudo nano juegos.txt
+  347  ls
+  348  sudo nano materiales.txt
+  349  git pull origin main
+  350  ls
+  351  nano asistentes.txt
+  352  git branches
+  353  git branch
+  354  git switch main
+  355  git branch
+  356  sudo nano asistentes.txt
+  357  git add asistentes.txt
+  358  git commit -m "David Martinez en la lista de asistentes"
+  359  git add comida.txt
+  360  git commit -m "Huevos añadidos"
+  361  git status
+  362  git add juegos.txt
+  363  git commit -m "Oca añadida"
+  364  git add bebida.txt
+  365  git commit -m "Agua añadida"
+  366  git status
+  367  git add materiales.txt
+  368  git commit -m "Mesas añadidas"
+  369  git status
+  370  git diff
+  371  git pull origin main
+  372  git merge origin/main
+  373  sudo nano asistentes.txt
+  374  git merge origin/main
+  375  git switch main
+  376  sudo nano comida.txt
+  377  sudo nano bebidas.txt
+  378  sudo nano bebida.txt
+  379  git status
+  380  sudo nano juegos.txt
+  381  git status
+  382  git add .
+  383  git status
+  384  git commit -m "Conflictos resueltos"
+  385  git switch main
+  386  git branch
+  387  git merge dev
+  388  git pull origin main
+  389  nano asistentes.txt
+  390  git pull origin main
+  391  git config pull.rebase false
+  392  git pull origin main
+  393  sudo nano materiales.txt
+  394  git add .
+  395  git commit -m "Cambios"
+  396  git pull origin main
+  397  sudo nano asistentes.txt
+  398  git pull origin main
+  399  git add .
+  400  git commit -m "cambios asistentes"
+  401  git pull origin main
+  402  git branch
+  403  git pull origin main
+  404  git pull
+  405  sudo nano bebida.txt
+  406  git pull
+  407  git push origin main
+  408  ls
+  409  git pull origin main
+  410  git switch dev
+  411  git merge main
+  412  sudo nano bebidas.txt
+  413  sudo nano bebida.txt
+  414  sudo nano comida.txt
+  415  git add aceitunas.txt
+  416  git add comida.txt
+  417  git commit -m "Nueva comida"
+  418  git pull origin main
+  419  nano bebida.txt
+  420  git pull origin main
+  421  git switch main
+  422  git pull origin main
+  423  git switch dev
+  424  git merge main
+  425  git switch main
+  426  git status
+  427  git pull origin main
+  428  sudo nano comida.txt
+  429  git switch dev
+  430  git pull origin main
+  431  nano comida.txt
+  432  git diff -- comida.txt
+  433  sudo nano comida.txt
+  434  git diff -- comida.txt
+  435  git add comida.txt
+  436  git commit -m "Comida"
+  437  git switch main
+  438  git merge dev
+  439  git pull origin main
+  440  git push origin main
+  441  git branch
+  442  git switch dev
+  443  git merge main
+  444  git pull origin main
+  445  git switch main
+  446  git pull origin main
+  447  git satus
+  448  git status
+  449  git pull origin main
+  450  ls
+  451  git init
+  452  git status
+  453  git add pgpi-ejercicio3-g3-martinez-david.tar.gz
+  454  git status
+  455  git remote add origin https://github.com/Dmartbenj/ejercicio3.git
+  456  git push -u origin main
+  457  jls
+  458  ls
+  459  cd entrega-github-ejercicio3
+  460  git status
+  461  git branch
+  462  git remote -v
+  463  git status
+  464  ls
+  465  git push -u origin main
+  466  ssh -T git@gitlab.com
+  467  cd ~
+  468  ls
+  469  cd barbacoaL3
+  470  ls
+  471  git remote add upstream https://gitlab.com/pgpi2627/barbacoaL3.git
+  472  git remote -v
+  473  git switch main
+  474  git fetch upstream
+  475  git switch mainç
+  476  git switch main
+  477  git fetch upstream
+  478  git merge --ff-only upstream/main
+  479  git branch
+  480  git switch -c feat/anadir-asistente
+  481  git switch feat/anadir-asistente
+  482  nano asistentes.adoc
+  483  ls
+  484  nano asistentes.adoc
+  485  ls
+  486  sudo nano asistentes.adoc
+  487  ps -fp 2379
+  488  sudo nano asistentes.adoc
+  489  git branch --show-current
+  490  git diff
+  491  git add asistentes.adoc
+  492  git commit -m "feat: añadir David Martínez Benjumea a asistentes"
+  493  git push -u origin feat/anadir-asistente
+  494  git branch --show-current
+  495  git fetch upstream
+  496  git status
+  497  git rebase upstream/main
+  498  cat asistentes.adoc
+  499  sudo nano asistentes.adoc
+  500  cat asistentes.adoc
+  501  git add asistentes.adoc
+  502  git rebase --continue
+  503  git push origin --force-with-lease feat/anadir-asistente
+  504  git reflog -8
+  505  git branch backup-rebase
+  506  git reset --hard 818f337
+  507  git log -1 --oneline
+  508  git merge upstream/main
+  509  sudo nano asistentes.adoc
+  510  git push
+  511  git switch main
+  512  git merge --ff-only upstream/main
+  513  git switch -c feat/anadir-transporte
+  514  git merge upstream/main
+  515  sudo nano asistentes.adoc
+  516  git merge upstream/main
+  517  git status
+  518  git add asistentes.adoc
+  519  git branch
+  520  git switch main
+  521  ls
+  522  cd entrega-github-ejercicio3/
+  523  ls
+  524  git remote
+  525  git remote -v
+  526  git push -u origin main
+  527  git pull
+  528  git status
+  529  ls
+  530  git add pgpi-ejercicio3-g3-martinez-david.tar.gz 
+  531  git status
+  532  git push -u origin main
+  533  git pull --no-rebase --allow-unrelated-histories origin main
+  534  git push -u origin main
+  535  ls -la ~/.ssh
+  536  cat ~/.ssh/id_ed25519.pub
+  537  ssh -T git@gitlab.com
+  538  cd ~
+  539  git clone git@gitlab.com:davidmartbenj/barbacoaL3.git
+  540  ls
+  541  cd barbacoaL3
+  542  ls
+  543  git remote add upstream https://gitlab.com/pgpi2627/barbacoaL3.git
+  544  git remote -v
+  545  git switch main
+  546  git fetch upstream
+  547  git merge --ff-only upstream/main
+  548  git switch -c feat/anadir-asistente
+  549  sudo nano asistentes.adoc
+  550  ls
+  551  git status
+  552  ls
+  553  cd barbacoaL3
+  554  git status
+  555  git commit
+  556  git status
+  557  git fetch upstream
+  558  git log --oneline HEAD..upstream/main
+  559  git merge upstream/main
+  560  ls
+  561  nano asistentes.adoc
+  562  git status
+  563  git log --oneline --graph -10
+  564  cat asistentes.adoc
+  565  git status 
+  566  nano comida.adoc
+  567  git status
+  568  git diff --cached-- comida.adoc
+  569  git diff --cached -- comida.adoc
+  570  nano comida.adoc
+  571  git add asistentes.adoc
+  572  git status
+  573  git commit
+  574  git status
+  575  git log --oneline origin/feat/anadir-asistente..HEAD
+  576  git show --stat --oneline 818f337
+  577  git diff --stat origin/main..HEAD
+  578  git remote -v
+  579  git fetch origin
+  580  git status
+  581  git log --oneline --decorate -8
+  582  git diff --stat origin/main..HEAD
+  583  git fetch upstream
+  584  git status
+  585  git log --oneline origin/feat/anadir-asistente..HEAD
+  586  git push origin feat/anadir-asistente
+  587  git status
+  588  git switch main
+  589  git pull upstream main
+  590  git switch -c feat/anadir-bebidas
+  591  cat bebida.adoc
+  592  ls
+  593  rm crear_proyecto.sh
+  594  ls
+  595  rm debouncer_c
+  596  rm debouncer_c.c
+  597  rmdir debouncer_c
+  598  cd debouncer_c
+  599  ls
+  600  cd ..
+  601  rm pgpi-ejercicio2-gX-apellido-nombre.tar.gz 
+  602  ls
+  603  cd barbacoaL3
+  604  ls
+  605  git log --onelne
+  606  git log --oneline
+  607  git fetch
+  608  git log --oneline
+  609  git pull
+  610  git branch
+  611  git switch main
+  612  git pull upstreammain
+  613  git pull upstream main
+  614  git switch anadir_asistente
+  615  git switch anadir-asistente
+  616  git switch feat/anadir-asistente
+  617  git branch
+  618  git rebase main
+  619  git status
+  620  nano asistentes.adoc 
+  621  git add .
+  622  git rebase main
+  623  git rebase --continue
+  624  git rebase main
+  625  git switch main
+  626  git pull
+  627  git switch feat/anadir-asistente 
+  628  git remote -v
+  629  git push --force-with-lease origin feat/anadir-asistente
+  630  git status
+  631  nano asistentes.adoc
+  632  git switch main
+  633  git pull upstream main
+  634  git push origin main
+  635  git pull upstream main
+  636  git switch feat/anadir-asistente 
+  637  git rebase main
+  638  sudo nano asistentes.adoc 
+  639  git push --force origin feat/anadir-asistente 
+  640  git status
+  641  git add .
+  642  git commit -m "feat: añadir a David Martínez a vehículo"
+  643  git push --force origin feat/anadir-asistente 
+  644  git log --oneline
+  645  git reset --hard e9e0327
+  646  git branch
+  647  git switch -c feat/anadir-vehiculo
+  648  nano asistentes.adoc
+  649  git switch feat/anadir-asistente 
+  650  git switch main 
+  651  git branch
+  652  git switch main
+  653  git status
+  654  git restore asistentes.adoc
+  655  git status
+  656  git switch main
+  657  git pull upstream main
+  658  git switch feat/anadir-asistente 
+  659  git rebase main
+  660  nano asistentes.adoc 
+  661  git rebase main
+  662  git switch main
+  663  git pull upstream main
+  664  nano asistentes.adoc 
+  665  git switch feat/anadir-asistente 
+  666  nano asistentes.adoc
+  667  git diff main feat/anadir-asistente
+  668  git reset --hard main
+  669  nano asistentes.adoc
+  670  git add .
+  671  git commit -m "feat: añadir David Martínez a asistentes"
+  672  git push --force origin feat/anadir-asistente 
+  673  git branch
+  674  git switch feat/anadir-vehiculo 
+  675  nano asistentes.adoc
+  676  git reset --hard feat/anadir-asistente 
+  677  nano asistentes.adoc
+  678  git branch
+  679  git add .
+  680  git status
+  681  git commit -m "añadir David Martínez a vehículo"
+  682  git push --force origin feat/anadir-vehiculo 
+  683  git commit --amend -m "feat: añadir David a vehículo"
+  684  git push --force origin feat/anadir-vehiculo 
+  685  git switch main 
+  686  git pull upstream main
+  687  git branch
+  688  git switch feat/anadir-bebidas
+  689  git reset --hard main
+  690  ls
+  691  nano comida.adoc 
+  692  git add .
+  693  git status
+  694  git commit -m "feat: añadir macarrones con tomate"
+  695  git reset --hard main
+  696  git status
+  697  git log
+  698  git log --oneline
+  699  nano bebida.adoc 
+  700  git add .
+  701  gitt branch
+  702  git branch
+  703  git commit -m "feat: añadir fanta de naranja"
+  704  git push --force origin feat/anadir-bebidas 
+  705  ls
+  706  cd barbacoaL3/
+  707  LS
+  708  ls
+  709  git pull
+  710  git branch
+  711  git switch main 
+  712  git pull
+  713  ls
+  714  git switch -c feat/anadir-comida
+  715  git status
+  716  git merge main
+  717  nano comida.adoc
+  718  git push
+  719  git status
+  720  git diff
+  721  git add comida.adoc 
+  722  git commit -m "feat: añadir comida a la lista"
+  723  git push origin feat/anadir-comida
+  724  nano comida.adoc
+  725  git switch main
+  726  nano comida.adoc 
+  727  git pull upstream main
+  728  git switch  feat/anadir-comida 
+  729  git merge upstream/main
+  730  nano comida.adoc 
+  731  git push origin feat/anadir-comida
+  732  git switch main
+  733  nano comida.adoc 
+  734  git switch feat/anadir-comida 
+  735  nano comida.adoc 
+  736  git reset main
+  737  nano comida.adoc 
+  738  git reset main
+  739  git statud
+  740  git status
+  741  git reset --hard main
+  742  nano comida.adoc 
+  743  git add comida.adoc 
+  744  git status
+  745  git commit -m "feat: añadir comida a la lista"
+  746  git push origin feat/anadir-comida
+  747  nano comida.adoc 
+  748  git diff
+  749  startx
+  750  sudo adduser ubuntu docker
+  751  exit
+  752  sudo localectl set-keymap es
+  753  setxkbmap es
+  754  sudo nano/etc/default/keyboard
+  755  sudo nano /etc/default/keyboard
+  756  docker run hello-world
+  757  docker image ls
+  758  docker images
+  759  docker container ls
+  760  docker ps
+  761  docker ps -a
+  762  git
+  763  ls
+  764  mkdir 01-app-web-prueba
+  765  ls
+  766  cd 01-app-web-prueba/
+  767  docker build -t miappweb .
+  768  docker images
+  769  docker image history miappweb
+  770  docker run -p 4000:80 miappweb
+  771  docker run --name contenedor22 --hostname pythonwebserver -p 4000:80 miappweb
+  772  docker login
+  773  docker tag miappweb Davidmb12/miprimerrepo:1.0
+  774  docker images
+  775  docker push Davidmb12/miprimerrepo:1.0
+  776  docker rmi Davidmb12/miprimerrepo:1.0
+  777  docker rmi davidmb12/miprimerrepo:1.0
+  778  docker tag miappweb davidmb12/miprimerrepo:1.0
+  779  docker push davidmb12/miprimerrepo:1.0
+  780  docker pull davidmb12/miprimerrepo:1.0
+  781  docker run -d -p 4000:80 webapp1 davidmb12/miprimerrepo:1.0
+  782  docker run -d -p 4000:80 --name  webapp1 davidmb12/miprimerrepo:1.0
+  783  curl http://localhost:4000
+  784  docker ps
+  785  docker volume create portainerdata
+  786  docker run -d -p 1234:9000 --name portainer -v /var/run/docker.sock:/var/run/docker.sock -v portainerdata:/data portainer/portainer-ce
+  787  docker ps
+  788  curl -I http://localhost:1234
+  789  hostname -I
+  790  docker stop webapp1
+  791  docker start contenedor22
+  792  docker pause contenedor22
+  793  docker ps
+  794  docker unpause contenedor22
+  795  docker restart contenedor22
+  796  docker stats
+  797  docker stats contenedor22
+  798  docker logs contenedor22
+  799  docker logs -f contenedor22
+  800  docker attach contenedor22
+  801  docker ps
+  802  docker ps -a
+  803  docker rename contenedor22 app4
+  804  docker ps -a
+  805  docker rm app4
+  806  docker images
+  807  docker prune
+  808  docker image  prune
+  809  who
+  810  history -a
+  811  sudo apt update
+  812  sudo apt install -y docker.io docker-compose
+  813  sudo adduser practicas docker
+  814  docker version
+  815  sudo adduser ubuntu
+  816  sudo adduser ubuntu docker
+  817  docker version
+  818  systemctl status docker
+  819  apt policy docker.io
+  820  docker help subcomando
+  821  docker help
+  822  docker help run
+  823  docker run hello-world
+  824  asdfdasfdsdfsdfsdfdsdfewrw
+  825  sdfsd
+  826  sudo apt update && sudo apt install --no-install-recommends xserver-xorg xinit openbox lightdm lxterminal netsurf-gtk -y
+  827  startx
+  828  clear
+  829  startx
+  830  docker run hello-world
+  831  startx
+  832  ls
+  833  cd 01-app-web-prueba/
+  834  nano requirements.txt
+  835  ls
+  836  nano Dockerfile
+  837  nano app.py
+  838  ls
+  839  docker build -t miappweb .
+  840  ls
+  841  cd ..
+  842  ls
+  843  cd entrega-pgpi/
+  844  ls
+  845  git push -u origin main
+  846  groups
+  847  startx
+  848  curl http://localhost:4000
+  849  docker ps
+  850  docker stop bold_moore
+  851  curl http://localhost:4000
+  852  docker ps
+  853  docker stop contenedor22
+  854  docker ps -a
+  855  history -n
+  856  docker ps -a > informe.txt
+  857  history >> informe.txt
+  858  less informe.txt
+  859  cd ~
+  860  mv 01-app-web-prueba pgpi-g2-martinez-benjumea-david
+  861  tar -czf pgpi-g2-martinez-benjume-david.tar.gz pgpi-g2-martinez-benjumea-david
+  862  tar -tzf pgpi-g2-martinez-benjume-david.tar.gz 
+  863  mkdir ~/entrega-pgpi
+  864  cp ~/pgpi-g2-martinez-benjume-david.tar.gz ~/entrega-pgpi/
+  865  cd ~/pgpi-docker-lab1
+  866  cd ~/entrega-pgpi
+  867  git init
+  868  git add .
+  869  git commit -m "Entrega Lab 1 Docker"
+  870  git branch -M main
+  871  git remote add origin https://github.com/Dmartbenj/pgpi-docker-lab1.git
+  872  git push -u origin main
+  873  ls
+  874  mkdir p2docker
+  875  cd p2docker
+  876  cd ..
+  877  rm p2docker/
+  878  mkdir ~/lab2-docker
+  879  cd lab2-docker/
+  880  sudo apt update
+  881  sudo apt install -y docker.io docker-compose
+  882  sudo adduser $USER docker
+  883  history -a
+  884  docker restart portainer && sleep 3 && docker logs portainer 2>&1 | grep setup_token | tail -1
+  885  opsd
+  886  docker stop web portainer
+  887  docker run -d --name apache -p 8000:80 httpd
+  888  curl localhost:8000
+  889  docker exec -it apache bash
+  890  curl localhost:8000
+  891  cd ~/lab2-docker
+  892  history | tail -20
+  893  docker ps -a > informe.txt
+  894  history >> informe.txt
